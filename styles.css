@@ -12,7 +12,7 @@
 
 html, body {
     padding: 0px;
-    margin: 0px;
+    margin: 0p;
     background-color: var(--white);
     margin: 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -36,9 +36,8 @@ margin-bottom: 10px;
     background-color: var(--blue);
     width: 100vw;
     height: 150px;
-    margin-top: -2%;
-    border-top: 0%;
-    padding: 10px;
+    position: fixed;
+    top: 0;
 }
 
 ul {
