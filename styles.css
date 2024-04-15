@@ -10,17 +10,20 @@
     --dark-gray: #23272a;
 }
 
-html, body {
+body {
     padding: 0px;
     margin: 0p;
-    background-color: var(--light-gray);
+    background-color: var(--white);
     margin: 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 400;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .container {
     max-width: 100%;
+    height: 100%;
     margin: auto, auto;
     padding: 0, 0.5rem;
 }
@@ -33,11 +36,11 @@ margin-bottom: 10px;
 }
 
 .nav-bar {
-    background-color: var(--blue);
+    background-color: var(--white);
     width: 100vw;
-    height: 150px;
-    position: fixed;
+    height: 20%;
     top: 0;
+    
 }
 
 ul {
@@ -46,6 +49,7 @@ ul {
     justify-content: center;
     font-size: 30px;
     text-align: center;
+    border-bottom: 1px solid black;
 
     
 }
@@ -65,44 +69,85 @@ a {
 }
 
 a:hover {
-    color: var(--white);
+    color:black;
+    text-decoration-line: underline;
 }
 
+#richyboy {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    margin-left: 42%;
+    border: 1px;
+    border-radius: 50%;
+    padding-top: 20px;
+}
+
+.rich {
+    border-radius: 40%;
+}
 
 #intro {
-    background-color: var(--dark-gray);
+    background-color: var(--white);
     width: 100%;
-    height: 800px;
+    height: 1000px;
     top: 0;
+}
+
+div .description {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+    top: 50px;
+    
+}
+
+.tools {
+    margin: 100px;
 }
 
 #about {
-    background-color: var(--blue);
+    background-color: var(--white);
     width: 100%;
     height: 800px;
     top: 0;
+
 }
 
 .name {
     display: flex;
     justify-content: center;
-    padding-top: 400px;
     font-size: 50px;
-    color: var(--white)
+    color: var(--dark-gray)
 }
 
-.about {
+.experience {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: var(--dark-gray)
+}
+
+p{
+    cursor: default;
+}
+
+p.about {
     display: flex;
     justify-content: center;
     font-size: 30px;
-    color: var(--white)
+    color: var(--dark-gray);
+    padding: 30px;
 }
 
 h2 {
     display: flex;
     justify-content: center;
-    color: var(--white);
+    color: var(--dark-gray);
     padding: 10px;
+    cursor: default;
 }
 
 .brands {
@@ -135,20 +180,30 @@ h2 {
 }
 
 #projects {
-    background-color: var(--dark-gray);
+    background-color: var(--white);
     width: 100%;
     height: 800px;
    
 }
 
 #contacts {
-    background-color: var(--blue);
+    background-color: var(--white);
     width: 100%;
     height: 800px;
+    
+}
+
+div.contacts a {
+    display: block;
+    font-size: 20px;
+    justify-content: center;
+    margin-left: 46%;
+    padding: 20px;
+    margin-top: 50px;
 }
 
 #links {
-    background-color: var(--dark-gray);
+    background-color: var(--white);
     width: 100%;
     height: 800px;
 }
@@ -159,11 +214,11 @@ h2 {
     right: -300px;
     font-size: 50px;
     scroll-behavior:smooth;
-    color: var(--light-gray);
+    color: var(--dark-gray);
 }
 
 footer p{
-    background-color: var(--light-gray);
+    background-color: var(--white);
     height: 100px;
     margin-top: 0px;
     display: flex;
