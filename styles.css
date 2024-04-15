@@ -310,3 +310,37 @@ footer p{
     font-size: 20px;
     color: var(--dark-gray);
 }
+
+
+@media screen and (max-width: 800px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-1 {
+        width: 80%;
+        height: 600px;
+    }
+    .project-2 {
+        width: 80%;
+        height: 600px;
+    }
+    .project-3 {
+        width: 80%;
+        height: 600px;
+    }
+    .project-4 {
+        width: 80%;
+        height: 600px;
+    }
+    .about-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+}
