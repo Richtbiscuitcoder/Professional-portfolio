@@ -14,7 +14,17 @@ closeModal.addEventListener('click', ()=>{
 
 
 // for the json info
- 
+const index = 0
+function makeModalContent(id, title, description) {
+    document.querySelector('.output').innerHTML = `
+    <li>${id}</li>
+    <li>${title}</li>
+    <li>${description}</li>
+    <button class="close-btn close-modal">&#x2715; Close</button>
+    
+    `
+}
+
 fetch('index.json')
 .then((response) => {
     return response.json()
@@ -23,7 +33,8 @@ fetch('index.json')
 data.projects.forEach(project => {
     document.querySelector('.grid-container').innerHTML += `
     <div class="project-${project.id}">
-        <button class="project-btn open-modal" id="${project.id}" title="button" data-title="${project.title}" data-id="${project.id}" data-description="${project.description} data-image="${project.image}">Learn more</button>
+        <p>${project.title}<p>
+        <button class="project-btn open-modal" id="${project.id}" title="button" data-title="${project.title}" data-id="${project.id}" data-description="${project.description} data-image="${project.image}" data-url="${project.url}">Learn more</button>
     </div>
     `
 })
@@ -31,11 +42,14 @@ data.projects.forEach(project => {
 document.querySelectorAll('.grid-container button').forEach(button => {
     button.addEventListener('click', (e) => {
         modalOne.showModal();
-        console.log(e.target.dataset.title)
+        makeModalContent(button.dataset.id, button.dataset.title, button.dataset.description)
     })
-})
 
+
+})
+})
 
  
-})
 
+
+    

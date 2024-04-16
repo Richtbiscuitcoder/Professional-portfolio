@@ -1,11 +1,11 @@
 {
-    "projects" :[
+    "projects":[
         {
             "id":"1",
-            "title": "project-one",
+            "title": "Age Calculator",
             "descritption": "description of project 1",
-            "image": "",
-            "url":""
+            "image": "assets/age-calc.jpg",
+            "url":"https://github.com/Richtbiscuitcoder/age-calculator"
         }
         ,
         {
