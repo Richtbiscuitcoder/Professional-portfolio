@@ -69,7 +69,7 @@ a:active {
 
 #richyboy {
     width: 400px;
-    height: 400px;
+    height: 300px;
     display: flex;
     margin: auto;
     border: 1px;
@@ -78,7 +78,8 @@ a:active {
 }
 
 .rich {
-    border-radius: 40%;
+    border-radius: 50%;
+    margin-left: 40px;
 }
 
 #intro {
@@ -297,6 +298,10 @@ h2 {
     font-size: large;
     margin-left: 150px;
     padding-top: 15px;
+}
+
+.close-modal:hover {
+    background-color: hsl(0, 0%, 20%);   
 }
 
 #links {
