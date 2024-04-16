@@ -4,22 +4,15 @@
     box-sizing: border-box;
 }
 
-:root {
-    --orange: #EE4540;
-    --red: #c72c41;
-    --dark-red: #801336;
-    --purple: #510a32;
-    --dark-purple: #2d142c;
-}
 
 html {
-    background-color: var(--dark-red);
+    background-color: hsl(24, 94%, 56%);
 }
 
 body {
     padding: 0px;
     margin: 0p;
-    background-color: white;
+    background-color: black;
     margin: 0px;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
@@ -36,7 +29,7 @@ body {
 
 
 .nav-bar {
-    background-color: var(--dark-red);
+    background-color: hsl(24, 94%, 56%);
     width: 100vw;
     height: 100%;
 }
@@ -49,8 +42,6 @@ ul {
     font-size: 30px;
     text-align: center;
     border-bottom: 1px solid black;
-
-    
 }
 
 li {
@@ -62,18 +53,19 @@ li {
 }
 
 a {
-    text-decoration: none;
-    color: hsl(0, 0%, 100%);
-    margin-right: 20%;
+    color: hsl(0, 0%, 0%);
+    
 }
 
 a:hover {
-    color: hsl(0, 0%, 80%);
-    text-decoration-line: underline;
+    color: hsl(0, 0%, 40%);
 }
+
 a:active {
     color: hsl(0, 0%, 60%);
 }
+
+
 
 #richyboy {
     width: 400px;
@@ -90,11 +82,11 @@ a:active {
 }
 
 #intro {
-    background-color: white;
+    background-color: black;
     width: 100vw;
     height: 100%;
     top: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid hsl(24, 94%, 56%);
 }
 
 div .description {
@@ -108,20 +100,20 @@ div .description {
 }
 
 .tools {
-    margin-bottom: 1px solid black;
+    margin-bottom: 1px solid hsl(24, 94%, 56%);
 }
 
 #about {
-    background-color: white;
+    background-color: black;
     width: 100%;
     height: 1000px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid hsl(24, 94%, 56%);
     font-size: 40px;
 }
 
 .about-me {
     font-size: 20px;
-    color: #801336;
+    color: hsl(24, 94%, 56%);
     display: block;
     justify-content: center;
     width: 900px;
@@ -132,23 +124,23 @@ div .description {
     display: flex;
     justify-content: center;
     font-size: 50px;
-    color: var(--dark-red)
+    color: hsl(24, 94%, 56%);
 }
 
 .experience {
     display: flex;
     justify-content: center;
     font-size: 30px;
-    color: var(--dark-red);
-    margin-top: 100px;
-    margin-bottom: 1px solid black;
+    color: hsl(24, 94%, 56%);
+    margin-top: 300px;
+    margin-bottom: 1px solid hsl(24, 94%, 56%);
 }
 
 .filler {
     display: flex;
     justify-content: center;
     font-size: 30px;
-    color: var(--dark-red);
+    color: hsl(24, 94%, 56%);
     padding-left: 150px;
     padding-right: 150px;
 
@@ -162,14 +154,14 @@ p.about {
     display: flex;
     justify-content: center;
     font-size: 30px;
-    color: var(--dark-red);
+    color: hsl(24, 94%, 56%);
     padding: 25px;
 }
 
 h2 {
     display: flex;
     justify-content: center;
-    color: var(--dark-red);
+    color: hsl(24, 94%, 56%);
     font-size: larger;
     cursor: default;
 }
@@ -204,7 +196,7 @@ h2 {
 }
 
 #projects {
-    background-color: var(--white);
+    background-color: black;
     width: 100%;
     height: 100%;
     font-size: 40px;
@@ -224,7 +216,7 @@ h2 {
 }
 
 .project-1 {
-    background-color: var(--dark-red);
+    background-color: hsl(24, 94%, 56%);
     height: 100%;
     border-radius: 12%;
     display: flex;
@@ -234,7 +226,7 @@ h2 {
 }
 
 .project-2 {
-    background-color:  var(--dark-red);
+    background-color: hsl(24, 94%, 56%);
     height: 100%;
     border-radius: 12%;
     display: flex;
@@ -244,7 +236,7 @@ h2 {
 }
 
 .project-3 {
-    background-color:  var(--dark-red);
+    background-color: hsl(24, 94%, 56%);
     height: 100%;
     border-radius: 12%;
     display: flex;
@@ -254,7 +246,7 @@ h2 {
 }
 
 .project-4 {
-    background-color:  var(--dark-red);
+    background-color: hsl(24, 94%, 56%);
     height: 100%;
     border-radius: 12%;
     display: flex;
@@ -269,14 +261,14 @@ h2 {
     width: 200px;
     height: 60px;
     border-radius: 8%;
-    background-color: var(--dark-purple);
-    color: white;
+    background-color: black;
+    color:  hsl(24, 94%, 56%);
     font-family: "Raleway", sans-serif;
     font-size: large;
 }
 
 .project-btn:hover {
-    background-color: hsl(302, 38%, 23%);
+    background-color:hsl(0, 0%, 20%);
 }
 
 .project-btn {
@@ -285,7 +277,7 @@ h2 {
 }
 
 .modal {
-    background-color: var(--dark-red);
+    background-color: hsl(24, 94%, 56%);
     z-index: 1;
     width: 600px;
     height: 600px;
@@ -299,8 +291,8 @@ h2 {
     width: 200px;
     height: 60px;
     border-radius: 8%;
-    background-color: var(--dark-purple);
-    color: white;
+    background-color: black;
+    color: hsl(24, 94%, 56%);
     font-family: "Raleway", sans-serif;
     font-size: large;
     margin-left: 150px;
@@ -308,10 +300,10 @@ h2 {
 }
 
 #links {
-    background-color: white;
+    background-color: black;
     width: 100%;
     height: 100%;
-    border-top: 1px solid black ;
+    border-top: 1px solid hsl(24, 94%, 56%); 
     font-size: 40px;
 }
 
@@ -324,19 +316,23 @@ div.contacts a {
     justify-content: center;
     align-items: center;   
     margin-left: 42.5%;
-    color: black;
+    color: hsl(24, 94%, 56%);
     width: 300px;
     height: 100px;
     margin-bottom: 50px;
 }
 
 div.contacts a:hover {
-    color: hsl(189, 65%, 45%);
+    color: hsl(24, 94%, 76%);
     text-decoration-line: underline;
 }
 
+div.contacts a:active {
+    color: hsl(24, 94%, 900px);
+}
+
 .contacts p {
-    color: var(--dark-red);
+    color: hsl(24, 94%, 56%);
     font-size: 30px;
     display: flex;
     justify-content: center;
@@ -345,21 +341,21 @@ div.contacts a:hover {
 .go-to-top {
     position: fixed;
     bottom: 30px;
-    right: -300px;
+    right: 100px;
     font-size: 50px;
     scroll-behavior:smooth;
-    color: var(--dark-gray);
+    color: hsl(24, 94%, 80%);
 }
 
 footer p{
-    background-color: var(--dark-red);
+    background-color: hsl(24, 94%, 56%);
     height: 100px;
     margin-top: 0px;
     display: flex;
     justify-content: center;
     padding-top: 30px;
     font-size: 20px;
-    color: var(--dark-gray);
+    color: black;
 }
 
 

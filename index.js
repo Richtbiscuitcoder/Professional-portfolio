@@ -4,13 +4,8 @@ const modalOne = document.querySelector('.modal');
 const openModal = document.querySelector('.open-modal');
 const closeModal = document.querySelector('.close-modal');
 
-/*
-openModals.forEach(function (openModal) {
-    openModal.addEventListener('click', openModal)
-    }
-})
-*/
 
+/*
 openModal.addEventListener('click', ()=>{
     modalOne.showModal();
 })
@@ -18,13 +13,13 @@ openModal.addEventListener('click', ()=>{
 closeModal.addEventListener('click', ()=>{
     modalOne.close();
 })
+*/
 
-/*
-const buttons = document.querySelectorAll('.open-modal');
+let btns = document.querySelectorAll('button');
 
-buttons.forEach(function (i) {
-    i.addEventListener('click', openModal(){
-        document.querySelector('???modal???').innerHTML = ${} ${} ${}
-    }
+btns.forEach(function (e) {
+    e.addEventListener('click', function(){
+        modalOne.showModal();
+    })
 })
-*/ 
+
