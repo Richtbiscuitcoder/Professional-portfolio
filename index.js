@@ -15,11 +15,12 @@ closeModal.addEventListener('click', ()=>{
 
 // for the json info
 const index = 0
-function makeModalContent(id, title, description) {
+function makeModalContent(url, title, description) {
     document.querySelector('.output').innerHTML = `
-    <li>${id}</li>
-    <li>${title}</li>
-    <li>${description}</li>
+    <span>${title}</span>
+    <p>${description}</p>
+    <a>View Live</a>
+    <a rel="noopener" href="${url}" target="_blank" title="github"><i class="fa-brands fa-github"></i>view on Github</a>
     <button class="close-btn close-modal">&#x2715; Close</button>
     
     `
@@ -36,6 +37,7 @@ data.projects.forEach(project => {
         <h3>${project.title}</h3>
         <img src=${project.image}>
         <a rel="noopener" href="${project.url}" target="_blank" title="github"><i class="fa-brands fa-github"></i>  view on Github</a>
+        <a>View Live</a>
         <button class="project-btn open-modal" id="${project.id}" title="button" data-title="${project.title}" data-id="${project.id}" data-description="${project.description}" data-image="${project.image}" data-url="${project.url}">Learn more</button>
     </div>
     `
