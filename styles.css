@@ -167,6 +167,15 @@ h2 {
     cursor: default;
 }
 
+h3 {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: larger;
+    cursor: default;  
+    font-family: "Raleway", sans-serif;
+}
+
 .brands {
     display: flex;
     justify-content: center;
@@ -263,7 +272,7 @@ h2 {
 .project-btn {
     display: block;
     justify-content: center;
-    margin-top: 300px;
+    margin-top: 200px;
     width: 200px;
     height: 60px;
     border-radius: 8%;
@@ -310,7 +319,10 @@ h2 {
     background-color: hsl(0, 0%, 20%);   
 }
 
-
+.grid-container a {
+    font-size: large;
+    padding: 20px;
+}
 
 #links {
     background-color: black;
