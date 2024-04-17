@@ -119,6 +119,7 @@ div .description {
     justify-content: center;
     width: 900px;
     margin-left: 28%;
+    
 }
 
 .name {
@@ -133,18 +134,16 @@ div .description {
     justify-content: center;
     font-size: 30px;
     color: hsl(24, 94%, 56%);
-    margin-top: 300px;
-    margin-bottom: 1px solid hsl(24, 94%, 56%);
+    margin-bottom: 0px;
+    font-weight: bold;
 }
+
 
 .filler {
     display: flex;
     justify-content: center;
     font-size: 30px;
     color: hsl(24, 94%, 56%);
-    padding-left: 150px;
-    padding-right: 150px;
-
 }
 
 p{
@@ -214,8 +213,8 @@ h3 {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: 500px 500px; 
+    grid-template-columns: 700px 700px;
+    grid-template-rows: 700px 700px; 
     column-gap: 50px;
     row-gap: 50px;
     justify-content: center;
@@ -272,7 +271,7 @@ h3 {
 .project-btn {
     display: block;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 20px;
     width: 200px;
     height: 60px;
     border-radius: 8%;
@@ -295,8 +294,8 @@ h3 {
 .modal {
     background-color: hsl(24, 94%, 56%);
     z-index: 1;
-    width: 600px;
-    height: 600px;
+    width: 900px;
+    height: 900px;
     overflow: hidden;
 }
 
@@ -304,7 +303,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
     width: 200px;
     height: 60px;
     border-radius: 8%;
@@ -312,7 +311,7 @@ h3 {
     color: hsl(24, 94%, 56%);
     font-family: "Raleway", sans-serif;
     font-size: large;
-    margin-left: 150px;
+    margin-left: 300px;
 }
 
 .close-modal:hover {
@@ -321,7 +320,15 @@ h3 {
 
 .grid-container a {
     font-size: large;
-    padding: 20px;
+    padding: 10px;
+}
+
+.grid-container img {
+    width: 400px;
+    height: 400px;
+    padding: 0;
+    border: 0;
+    margin: 0;
 }
 
 #links {
@@ -426,5 +433,18 @@ footer p{
         justify-content: center;
         align-items: center;
         margin-right: 20px;
+    }
+    .filler {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .grid-container img {
+        padding: 20px;
+    }
+    .project-btn {
+        margin-top: 0;
+        margin-bottom: 10px;
     }
 }

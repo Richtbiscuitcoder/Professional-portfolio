@@ -15,9 +15,9 @@ closeModal.addEventListener('click', ()=>{
 
 // for the json info
 const index = 0
-function makeModalContent(image, title, description) {
+function makeModalContent(id, title, description) {
     document.querySelector('.output').innerHTML = `
-    <li>${image}</li>
+    <li>${id}</li>
     <li>${title}</li>
     <li>${description}</li>
     <button class="close-btn close-modal">&#x2715; Close</button>
@@ -44,7 +44,7 @@ data.projects.forEach(project => {
 document.querySelectorAll('.grid-container button').forEach(button => {
     button.addEventListener('click', (e) => {
         modalOne.showModal();
-        makeModalContent(button.dataset.image, button.dataset.title, button.dataset.description)
+        makeModalContent(button.dataset.id, button.dataset.title, button.dataset.description)
     })
 
 

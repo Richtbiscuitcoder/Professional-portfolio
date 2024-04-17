@@ -4,12 +4,7 @@
             "id":"1",
             "title": "Age Calculator",
             "description": "A Javascript calculator that works out your age based on your date of birth input.",
-            "image":
-                    {
-                        "url": "assets/age-calc.png",
-                        "width": 200,
-                        "height": 200
-                    } ,
+            "image": "assets/age-calc.png",
             "url":"https://github.com/Richtbiscuitcoder/age-calculator"
         }
         ,
