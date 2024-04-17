@@ -136,14 +136,18 @@ div .description {
     color: hsl(24, 94%, 56%);
     margin-bottom: 0px;
     font-weight: bold;
+    margin-top: 50px;
 }
 
 
 .filler {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 30px;
     color: hsl(24, 94%, 56%);
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 p{
