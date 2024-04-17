@@ -297,7 +297,7 @@ h3 {
     z-index: 1;
     width: 600px;
     height: 600px;
-    
+    overflow: hidden;
 }
 
 .close-modal {
