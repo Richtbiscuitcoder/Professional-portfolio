@@ -86,7 +86,7 @@ a:active {
 }
 
 #intro {
-    background-color: black;
+    background: linear-gradient(#6b4a23, #000000);
     width: 100vw;
     height: 100%;
     top: 0;
@@ -108,7 +108,7 @@ div .description {
 }
 
 #about {
-    background-color: black;
+    background: black;
     width: 100%;
     height: 1200px;
     border-bottom: 1px solid teal;
@@ -380,7 +380,7 @@ h3 {
 }
 
 #links {
-    background-color: black;
+    background: linear-gradient(#000000, #6b4a23);
     width: 100%;
     height: 100%;
     border-top: 1px solid hsl(24, 94%, 56%); 
