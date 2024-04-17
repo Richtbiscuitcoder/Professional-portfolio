@@ -154,6 +154,10 @@ div .description {
     text-align: center;
 }
 
+.please {
+    margin-top: 150px;
+}
+
 p{
     cursor: default;
 }
@@ -507,5 +511,13 @@ footer p{
     }
     .brands {
         font-size: 40px;
+    }
+    .tools {
+        text-align: center;
+        margin-right: 40px;
+    }
+    .go-to-top {
+        bottom: 5px;
+        right: 10px;
     }
 }
