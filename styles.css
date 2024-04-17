@@ -380,7 +380,7 @@ h3 {
 }
 
 #links {
-    background: linear-gradient(#000000, #6b4a23);
+    background: linear-gradient(#000000, teal);
     width: 100%;
     height: 100%;
     border-top: 1px solid hsl(24, 94%, 56%); 
