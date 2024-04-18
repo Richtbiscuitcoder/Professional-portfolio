@@ -209,13 +209,12 @@ h3 {
 .grid-container {
     display: grid;
     grid-template-columns: 600px 600px;
-    grid-template-rows: 750px 750px; 
+    grid-template-rows: 800px 800px; 
     column-gap: 100px;
     row-gap: 100px;
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
-    margin-left: 0%;
     margin-top: 100px;
 }
 
@@ -251,10 +250,6 @@ h3 {
     font-weight: bold
 }
 
-.project-btn {
-    display: block;
-    bottom: 20px;
-}
 
 .modal {
     background: linear-gradient(teal, #000000);
@@ -274,7 +269,8 @@ h3 {
     justify-content: center;
     padding: 10px;
     font-size: 30px;
-    color: hsl(24, 94%, 56%)
+    color: hsl(24, 94%, 56%);
+    margin: 0;
 }
 
 .modal a:hover {
@@ -412,7 +408,7 @@ footer p{
     }
     .project {
         width: 80%;
-        height: 600px;
+        height: 750px;
     }
     
     .about {
@@ -453,7 +449,7 @@ footer p{
     .grid-container img {
         padding: 20px;
     }
-    .project-btn {
+    .project-btn.open-modal {
         margin-top: 0;
         margin-bottom: 10px;
     }
@@ -481,4 +477,12 @@ footer p{
         margin-left: 50px;
     }
 
+}
+
+@media screen and (max-width:1350px) {
+    .grid-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
