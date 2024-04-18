@@ -67,7 +67,6 @@ a:active {
     display: flex;
     margin: auto;
     border: 1px;
-    border-radius: 50%;
     padding-top: 20px;
     
 }
@@ -220,40 +219,7 @@ h3 {
     margin-top: 100px;
 }
 
-.project-1 {
-    background: linear-gradient(teal, hsl(24, 94%, 56%));
-    height: 100%;
-    border-radius: 12%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 1px 1px 10px 1px teal;
-}
-
-.project-2 {
-    background: linear-gradient(teal, hsl(24, 94%, 56%));
-    height: 100%;
-    border-radius: 12%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 1px 1px 10px 1px teal;
-}
-
-.project-3 {
-    background: linear-gradient(teal, hsl(24, 94%, 56%));;
-    height: 100%;
-    border-radius: 12%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 1px 1px 10px 1px teal;
-}
-
-.project-4 {
+.project {
     background: linear-gradient(teal, hsl(24, 94%, 56%));
     height: 100%;
     border-radius: 12%;
@@ -444,22 +410,11 @@ footer p{
         justify-content: center;
         align-items: center;
     }
-    .project-1 {
+    .project {
         width: 80%;
         height: 600px;
     }
-    .project-2 {
-        width: 80%;
-        height: 600px;
-    }
-    .project-3 {
-        width: 80%;
-        height: 600px;
-    }
-    .project-4 {
-        width: 80%;
-        height: 600px;
-    }
+    
     .about {
         text-align: center;
     }
@@ -490,10 +445,10 @@ footer p{
     }
     .filler {
         display: flex;
-        flex-wrap: wrap;
-        padding-left: 100px;
-        padding-right: 100px;
-        font-size: 30px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 25px;
     }
     .grid-container img {
         padding: 20px;
@@ -503,21 +458,17 @@ footer p{
         margin-bottom: 10px;
     }
     .brands {
-        font-size: 50px;
+        font-size: 40px;
         text-align: center;
+        padding: 0;
+        padding-bottom: 50px;
     }
     .tools {
         text-align: center;
-        margin-right: 40px;
     }
     .go-to-top {
         bottom: 5px;
         right: 10px;
-    }
-    .please {
-        text-align: center;
-        margin-left: 30px;
-        margin-top: 30px;
     }
     li {
         font-size: larger;
@@ -529,7 +480,5 @@ footer p{
     .close-modal {
         margin-left: 50px;
     }
-    .languages {
-        margin-left: 30px;
-    }
+
 }
