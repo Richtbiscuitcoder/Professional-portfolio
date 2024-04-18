@@ -393,7 +393,7 @@ div.contacts a:active {
     right: 100px;
     font-size: 50px;
     scroll-behavior:smooth;
-    color: hsl(24, 100%, 60%);
+    color: white;
 }
 
 /* footer */
