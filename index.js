@@ -4,10 +4,6 @@ const modalOne = document.querySelector('.modal');
 const openModal = document.querySelector('.open-modal');
 const closeModal = document.querySelector('#modal');
 
-
-
-
-
 closeModal.addEventListener('click', ()=>{
     modalOne.close();
 })
@@ -22,8 +18,7 @@ function makeModalContent(url, title, description) {
     <a>View Live</a>
     <a rel="noopener" href="${url}" target="_blank" title="github"><i class="fa-brands fa-github"></i>view on Github</a>
     <button class="close-btn close-modal">&#x2715; Close</button>
-    
-    `
+       `
 }
 
 fetch('index.json')
@@ -52,8 +47,3 @@ document.querySelectorAll('.grid-container button').forEach(button => {
 
 })
 })
-
- 
-
-
-    
