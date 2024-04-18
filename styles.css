@@ -121,10 +121,12 @@ div .description {
 .about-me {
     font-size: 20px;
     color: hsl(24, 94%, 56%);
-    display: block;
+    display: flex;
     justify-content: center;
+    flex-direction: column;
     width: 900px;
-    margin-left: 28%;
+    text-align: center;
+    margin-left: 520px;
     
 }
 
@@ -138,6 +140,7 @@ div .description {
 .languages {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     font-size: 30px;
     color: hsl(24, 94%, 56%);
     margin-top: 30px;
@@ -151,10 +154,8 @@ div .description {
     align-items: center;
     font-size: 40px;
     color: hsl(24, 94%, 56%);
-    padding-left: 50px;
-    padding-right: 50px;
     text-align: center;
-}
+    }
 
 .please {
     margin-top: 100px;
@@ -180,6 +181,7 @@ h2 {
     color: hsl(24, 94%, 56%);
     font-size: 70px;
     cursor: default;
+    text-align: center;
 }
 
 h3 {
@@ -465,7 +467,7 @@ footer p{
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
     .grid-container {
         display: flex;
         flex-direction: column;
