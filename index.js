@@ -46,7 +46,7 @@ data.projects.forEach(project => {
 document.querySelectorAll('.grid-container button').forEach(button => {
     button.addEventListener('click', (e) => {
         modalOne.showModal();
-        makeModalContent(button.dataset.id, button.dataset.title, button.dataset.description)
+        makeModalContent(button.dataset.url, button.dataset.title, button.dataset.description)
     })
 
 

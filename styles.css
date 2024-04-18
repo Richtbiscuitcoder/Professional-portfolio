@@ -10,8 +10,6 @@ html {
 }
 
 body {
-    padding: 0px;
-    margin: 0p;
     background-color: black;
     margin: 0px;
     font-family: "Bebas Neue", sans-serif;
@@ -23,8 +21,9 @@ body {
 .container {
     max-width: 100%;
     height: 100%;
-    margin: auto, auto;
-    padding: 0, 0.5rem;
+    margin-top: -20px;
+    border: 0;
+    padding: 0;
 }
 
 
@@ -32,6 +31,9 @@ body {
     background-color: hsl(24, 94%, 56%);
     width: 100vw;
     height: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
 }
 
 
@@ -41,7 +43,7 @@ ul {
     justify-content:space-around;
     font-size: 30px;
     text-align: center;
-    border-bottom: 1px solid black;
+   
 }
 
 li {
@@ -49,7 +51,7 @@ li {
     display: flex;
     justify-content: center;
     font-size: 40px;
-    padding: 30px;
+    padding-top: 30px;
 }
 
 a {
@@ -82,15 +84,15 @@ a:active {
 .rich {
     border-radius: 50%;
     margin-left: 0px;
-    border: 3px solid teal ;
+    border: 3px solid black ;
 }
 
 #intro {
-    background: linear-gradient(#6b4a23, #000000);
+    background: linear-gradient(teal, #000000);
     width: 100vw;
     height: 100%;
     top: 0;
-    border-bottom: 1px solid teal;
+    border-bottom: 1px solid hsl(24, 94%, 56%);
 }
 
 div .description {
@@ -105,6 +107,7 @@ div .description {
 
 .tools {
     margin-top: 50px;
+    border-top: 1px solid teal;
 }
 
 #about {
@@ -138,8 +141,7 @@ div .description {
     font-size: 30px;
     color: hsl(24, 94%, 56%);
     margin-top: 30px;
-    margin-bottom: 50px;
-    margin-left: 70px;
+    text-align: center;
 }
 
 
@@ -155,7 +157,7 @@ div .description {
 }
 
 .please {
-    margin-top: 200px;
+    margin-top: 100px;
     
 }
 
@@ -169,6 +171,7 @@ p.about {
     font-size: 30px;
     color: hsl(24, 94%, 56%);
     padding: 25px;
+    text-align: center;
 }
 
 h2 {
@@ -195,7 +198,8 @@ h3 {
     font-size: 100px;
     margin: 10px;
     gap: 10px;
-    padding-top: 20px;
+    padding: 60px;
+    border-bottom: 1px solid teal;
 }
 
 #html {
@@ -227,7 +231,7 @@ h3 {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 700px 700px;
+    grid-template-columns: 600px 600px;
     grid-template-rows: 750px 750px; 
     column-gap: 100px;
     row-gap: 100px;
@@ -239,7 +243,7 @@ h3 {
 }
 
 .project-1 {
-    background-color: hsl(24, 94%, 56%);
+    background: linear-gradient(teal, hsl(24, 94%, 56%));
     height: 100%;
     border-radius: 12%;
     display: flex;
@@ -250,7 +254,7 @@ h3 {
 }
 
 .project-2 {
-    background-color: hsl(24, 94%, 56%);
+    background: linear-gradient(teal, hsl(24, 94%, 56%));
     height: 100%;
     border-radius: 12%;
     display: flex;
@@ -261,7 +265,7 @@ h3 {
 }
 
 .project-3 {
-    background-color: hsl(24, 94%, 56%);
+    background: linear-gradient(teal, hsl(24, 94%, 56%));;
     height: 100%;
     border-radius: 12%;
     display: flex;
@@ -272,7 +276,7 @@ h3 {
 }
 
 .project-4 {
-    background-color: hsl(24, 94%, 56%);
+    background: linear-gradient(teal, hsl(24, 94%, 56%));
     height: 100%;
     border-radius: 12%;
     display: flex;
@@ -309,21 +313,35 @@ h3 {
 }
 
 .modal {
-    background-color: hsl(24, 94%, 56%);
+    background: linear-gradient(teal, #000000);
+    color: hsl(24, 94%, 56%);
     z-index: 1;
     width: 900px;
-    height: 900px;
+    height: 750px;
     overflow: hidden;
     border-radius: 5%;
     border: 2px solid black;
     text-align: center;
+    position: fixed;
 }
+
+.modal::backdrop {
+    background: transparent;
+    opacity: 0;
+}
+
 
 .modal a {
     display: flex;
     justify-content: center;
     padding: 10px;
     font-size: 30px;
+    color: hsl(24, 94%, 56%)
+}
+
+.modal a:hover {
+    cursor: pointer;
+    color: hsl(24, 94%, 76%);;
 }
 
 .modal span {
@@ -338,6 +356,7 @@ h3 {
     display: flex;
     justify-content: center;
     padding: 10px;
+    color: hsl(24, 94%, 56%)
 }
 
 
@@ -350,8 +369,8 @@ h3 {
     width: 200px;
     height: 60px;
     border-radius: 8%;
-    background-color: black;
-    color: hsl(24, 94%, 56%);
+    background-color: hsl(24, 94%, 56%);;
+    color: black;
     font-family: "Bebas Neue", sans-serif;
     font-size: large;
     margin-left: 300px;
@@ -359,7 +378,9 @@ h3 {
 }
 
 .close-modal:hover {
-    background-color: teal;   
+    background-color: black;
+    color: hsl(24, 94%, 56%);
+    font-weight: bold;   
 }
 
 .grid-container a {
@@ -407,7 +428,7 @@ div.contacts a {
 }
 
 div.contacts a:hover {
-    color: teal;
+    color: hsl(24, 94%, 76%);
     text-decoration-line: underline;
 }
 
@@ -440,10 +461,8 @@ footer p{
     padding-top: 30px;
     font-size: 20px;
     color: black;
-    border-top: 5px solid teal;
+    border-top: 1px solid black;
 }
-
-
 
 
 @media screen and (max-width: 800px) {
@@ -511,9 +530,8 @@ footer p{
         margin-bottom: 10px;
     }
     .brands {
-        font-size: 40px;
+        font-size: 70px;
         text-align: center;
-        margin-left: 50px;
     }
     .tools {
         text-align: center;
@@ -526,5 +544,16 @@ footer p{
     .please {
         text-align: center;
         margin-left: 30px;
+        margin-top: 30px;
+    }
+    li {
+        font-size: larger;
+        padding: 15px;
+    }
+    .modal {
+        font-size: 40px;
+    }
+    .close-modal {
+        margin-left: 50px;
     }
 }
