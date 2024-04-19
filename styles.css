@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Gruppo&display=swap');
+
+
 
 * {
     box-sizing: border-box;
@@ -12,7 +14,7 @@ html {
 body {
     background-color: black;
     margin: 0px;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Big Shoulders Display", sans-serif;
     font-weight: 400;
     width: 100vw;
     overflow-x: hidden;
@@ -96,6 +98,16 @@ div .description {
     
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: larger;
+    cursor: default;  
+    margin-bottom: 10px;
+    font-size: 70px;
+    color: hsl(24, 94%, 56%);
+}
 /* section 2 */
 
 #about {
@@ -121,6 +133,8 @@ div .description {
     font-size: 40px;
     color: hsl(24, 94%, 56%);
     text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .tools {
@@ -132,7 +146,7 @@ div .description {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    font-size: 30px;
+    font-size: 40px;
     color: hsl(24, 94%, 56%);
     margin-top: 30px;
     text-align: center;
@@ -158,18 +172,6 @@ h2 {
     font-size: 70px;
     cursor: default;
     text-align: center;
-}
-
-h1 {
-    display: flex;
-    justify-content: center;
-    color: black;
-    font-size: larger;
-    cursor: default;  
-    font-family: "Bebas Neue", sans-serif;
-    margin-bottom: 10px;
-    font-size: 70px;
-    color: hsl(24, 94%, 56%);
 }
 
 .brands {
@@ -244,7 +246,7 @@ h1 {
     border-radius: 8%;
     background-color: black;
     color:  hsl(24, 94%, 56%);
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Gruppo", sans-serif;
     font-size: large;
     margin-right: 0;
     cursor: pointer;
@@ -256,14 +258,12 @@ h1 {
     font-weight: bold
 }
 
-
 .modal {
     background: linear-gradient(teal, #000000);
     color: hsl(24, 94%, 56%);
     z-index: 1;
     width: 900px;
     height: 750px;
-    overflow: hidden;
     border-radius: 5%;
     border: 2px solid black;
     text-align: center;
@@ -313,7 +313,7 @@ h1 {
     border-radius: 8%;
     background-color: hsl(24, 94%, 56%);;
     color: black;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Gruppo", sans-serif;
     font-size: large;
     margin-left: 300px;
     cursor: pointer;
@@ -433,6 +433,10 @@ footer p{
     
     .about {
         text-align: center;
+        font-size: 10px;
+    }
+    p.about {
+        font-size: 30px;
     }
     .about-me {
         display: flex;
@@ -464,10 +468,18 @@ footer p{
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size: 25px;
+        font-size: 30px;
     }
+
+    .languages {
+        font-size: 30px;
+    }
+
     .grid-container img {
         padding: 20px;
+    }
+    .project a {
+        font-size: 30px;
     }
     .project-btn.open-modal {
         margin-top: 0;
@@ -495,6 +507,9 @@ footer p{
     }
     .close-modal {
         margin-left: 50px;
+    }
+    h3 {
+        font-size: 50px;
     }
 
 }
