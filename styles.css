@@ -96,11 +96,6 @@ div .description {
     
 }
 
-.tools {
-    margin-top: 50px;
-    border-top: 1px solid teal;
-}
-
 /* section 2 */
 
 #about {
@@ -126,6 +121,11 @@ div .description {
     font-size: 40px;
     color: hsl(24, 94%, 56%);
     text-align: center;
+}
+
+.tools {
+    margin-top: 50px;
+    border-top: 1px solid teal;
 }
 
 .languages {
@@ -160,7 +160,7 @@ h2 {
     text-align: center;
 }
 
-h3 {
+h1 {
     display: flex;
     justify-content: center;
     color: black;
