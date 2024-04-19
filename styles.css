@@ -236,7 +236,9 @@ h2 {
     align-items: center;
     box-shadow: 1px 1px 10px 1px teal;
 }
-
+.grid-container .project a {
+    font-size: 25px;
+}
 .project-btn {
     display: block;
     justify-content: center;
@@ -247,7 +249,7 @@ h2 {
     background-color: black;
     color:  hsl(24, 94%, 56%);
     font-family: "Gruppo", sans-serif;
-    font-size: large;
+    font-size: 25px;
     margin-right: 0;
     cursor: pointer;
 }
@@ -314,7 +316,7 @@ h2 {
     background-color: hsl(24, 94%, 56%);;
     color: black;
     font-family: "Gruppo", sans-serif;
-    font-size: large;
+    font-size: 25px;
     margin-left: 300px;
     cursor: pointer;
 }
