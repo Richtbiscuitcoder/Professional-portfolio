@@ -323,7 +323,7 @@ h2 {
 
 .close-modal:hover {
     background-color: teal;
-    color: hsl(24, 94%, 56%);
+    color: black;
     font-weight: bold;   
 }
 
