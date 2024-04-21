@@ -421,12 +421,16 @@ footer p{
 
 /* media queries */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .grid-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .grid-container img {
+        width: 350px;
     }
     .project {
         width: 80%;
@@ -435,7 +439,7 @@ footer p{
     
     .about {
         text-align: center;
-        font-size: 10px;
+        font-size: 30px;
     }
     p.about {
         font-size: 30px;
@@ -513,6 +517,10 @@ footer p{
     h3 {
         font-size: 50px;
     }
+    #about {
+        height: 1600px;
+    }
+   
 
 }
 
