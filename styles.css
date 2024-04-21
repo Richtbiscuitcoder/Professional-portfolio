@@ -421,7 +421,7 @@ footer p{
 
 /* media queries */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
     .grid-container {
         display: flex;
         flex-direction: column;
