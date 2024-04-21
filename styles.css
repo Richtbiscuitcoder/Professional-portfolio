@@ -17,7 +17,7 @@ body {
     font-family: "Big Shoulders Display", sans-serif;
     font-weight: 400;
     width: 100vw;
-
+    overflow-x: hidden;
 }
 /* start of nav bar */
 
@@ -133,9 +133,12 @@ h1 {
     font-size: 40px;
     color: hsl(24, 94%, 56%);
     text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .tools {
+    margin-top: 50px;
     border-top: 1px solid teal;
 }
 
@@ -418,16 +421,15 @@ footer p{
 
 /* media queries */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     .grid-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
     .grid-container img {
-        width: 350px;
+        width: 300px;
     }
     .project {
         width: 80%;
@@ -436,11 +438,11 @@ footer p{
     #about {
         height: 1400px;
     }
-
+   
     p.about {
         font-size: 30px;
     }
- 
+    
     .contact-card {
         display: flex;
         justify-content: center;
@@ -461,7 +463,7 @@ footer p{
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .languages {
@@ -504,6 +506,11 @@ footer p{
     h3 {
         font-size: 50px;
     }
-
+    h2 {
+        margin-bottom: 0px;
+        border: 0;
+        padding: 0;
+        font-size: 50px;
+    }
 }
 
