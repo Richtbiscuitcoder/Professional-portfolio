@@ -17,7 +17,7 @@ body {
     font-family: "Big Shoulders Display", sans-serif;
     font-weight: 400;
     width: 100vw;
-    overflow-x: hidden;
+
 }
 /* start of nav bar */
 
@@ -133,12 +133,9 @@ h1 {
     font-size: 40px;
     color: hsl(24, 94%, 56%);
     text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
 }
 
 .tools {
-    margin-top: 50px;
     border-top: 1px solid teal;
 }
 
@@ -421,7 +418,7 @@ footer p{
 
 /* media queries */
 
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 800px) {
     .grid-container {
         display: flex;
         flex-direction: column;
@@ -436,24 +433,14 @@ footer p{
         width: 80%;
         height: 750px;
     }
-    
-    .about {
-        text-align: center;
-        font-size: 30px;
+    #about {
+        height: 1400px;
     }
+
     p.about {
         font-size: 30px;
     }
-    .about-me {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 0;
-        margin-left: -40px;
-        width: 120%;
-        text-align: center;
-    }
+ 
     .contact-card {
         display: flex;
         justify-content: center;
@@ -517,17 +504,6 @@ footer p{
     h3 {
         font-size: 50px;
     }
-    #about {
-        height: 1600px;
-    }
-   
 
 }
 
-@media screen and (max-width:1350px) {
-    .grid-container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-}
