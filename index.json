@@ -1,35 +1,32 @@
 {
-    "projects":[
-        {
-            "id":"1",
-            "title": "Age Calculator",
-            "description": "A calculator that works out your age based on your date of birth input. Built with HTML, CSS and Javascript",
-            "image": "assets/age-calc.png",
-            "url":"https://github.com/Richtbiscuitcoder/age-calculator"
-        }
-        ,
-        {
-            "id":"2",
-            "title":"project-two",
-            "description":"description of project 2",
-            "image": "",
-            "url":""
-        }
-        ,
-        {
-            "id":"3",
-            "title": "project-three",
-            "description": "description of project 3",
-            "image": "",
-            "url":""
-        }
-        ,
-        {
-            "id":"4",
-            "title": "project-four",
-            "description": "description of project 4",
-            "image": "",
-            "url":""
-        }
-    ]
+  "projects": [
+    {
+      "id": "1",
+      "title": "Age Calculator",
+      "description": "A calculator that works out your age based on your date of birth input. Built with HTML, CSS and Javascript",
+      "image": "assets/age-calc.png",
+      "url": "https://github.com/Richtbiscuitcoder/age-calculator"
+    },
+    {
+      "id": "2",
+      "title": "Email Client",
+      "description": "Email client group project built using React",
+      "image": "assets/Email-client.png",
+      "url": "https://github.com/iO-Academy/2024-mar-sde-email-client-panda-monium"
+    },
+    {
+      "id": "3",
+      "title": "project-three",
+      "description": "description of project 3",
+      "image": "",
+      "url": ""
+    },
+    {
+      "id": "4",
+      "title": "project-four",
+      "description": "description of project 4",
+      "image": "",
+      "url": ""
+    }
+  ]
 }
