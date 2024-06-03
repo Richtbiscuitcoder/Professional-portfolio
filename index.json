@@ -16,10 +16,10 @@
     },
     {
       "id": "3",
-      "title": "project-three",
-      "description": "description of project 3",
-      "image": "",
-      "url": ""
+      "title": "Furniture Store",
+      "description": "Our 2nd group project, a storefront for a furniture website. Built using PHP/sequel ace.",
+      "image": "assets/furniture-store.png",
+      "url": "https://github.com/iO-Academy/2024-mar-sde-furniture-store-panda-monium"
     },
     {
       "id": "4",
