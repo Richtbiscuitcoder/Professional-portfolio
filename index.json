@@ -10,21 +10,21 @@
     {
       "id": "2",
       "title": "Email Client",
-      "description": "Email client group project built using React",
+      "description": "Email client, our first group project built using React",
       "image": "assets/Email-client.png",
       "url": "https://github.com/iO-Academy/2024-mar-sde-email-client-panda-monium"
     },
     {
       "id": "3",
       "title": "Furniture Store",
-      "description": "Our 2nd group project, a storefront for a furniture website. Built using PHP/sequel ace.",
+      "description": "Our second group project, a storefront for a furniture website. Built using PHP/MySQL",
       "image": "assets/furniture-store.png",
       "url": "https://github.com/iO-Academy/2024-mar-sde-furniture-store-panda-monium"
     },
     {
       "id": "4",
       "title": "Quizzer",
-      "description": "Final group project, A Quiz building app using Laravel to build an API",
+      "description": "Third and final group project, A Quiz building app using Laravel/MySQL to build a RESTful API",
       "image": "",
       "url": "https://github.com/iO-Academy/2024-mar-sde-quizzer-api-pandamonium"
     }
