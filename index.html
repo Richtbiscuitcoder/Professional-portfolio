@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rich's portfolio</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <script defer src="index.js"></script>
         <script defer src="index.json"></script>
         <script src="https://kit.fontawesome.com/209505bec5.js" crossorigin="anonymous"></script>
@@ -13,33 +16,59 @@
         <div class="container">  
             <header>
                 <nav class="nav-bar" id="nav-bar">
-                    <p>RICH OWEN</p>
+                    <div class="nav-name">
+                        <p>RICH OWEN</p>
+                    </div>
                     <ul class="nav-links">
-
-                        <li><a href="#about"><i class="fa-solid fa-user"></i>  About</a></li>
-                        <li><a href="#projects"><i class="fa-solid fa-code"></i>  Projects</a></li>
-                        <li><a href="#links"><i class="fa-solid fa-link"></i>  Links</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#links">Links</a></li>
                     </ul>
                 </nav>
             </header>
         </div>
         
         <section id="intro" class="intro">
-            <div class="description">
-                <div id="richyboy">
-                    <img class="rich" src="assets/rich.jpg" id="rich-pic" alt="Rich">
+            <div id="richyboy">
+                <img class="rich" src="assets/rich.jpg" id="rich-pic" alt="Rich">
+                <div class="description">
+                    <p class="greeting">Hello, i'm</p>
+                    <h1 class="name-title">Rich Owen</h1>
+                    <p class="job-title">Junior Software Developer.</p>
+                    <div class="btn-div">
+                        <a rel="noopener" href=""><button class="btn-1" onclick="window.open('./assets/Rich-owen-cv-2023.pdf')">Download CV</button></a>
+                        <a rel="noopener" href="#links"><button class="btn-2">Contact Info</button></a> 
+                    </div>
+                    <div class="contact-card">
+                        <a rel="noopener" href="https://github.com/Richtbiscuitcoder" target="_blank" class="contact-github" title="github"><i class="fa-brands fa-github"></i></a>
+                        <a rel="noopener" href="https://www.linkedin.com/in/rich-owen-886968304/" target="_blank" class="btn contact-linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
                 </div>
-                <h1>Rich Owen</h1>
-                <p class="about">Junior Software Developer.</p>
             </div>
+            
+
         </section>
         <section id="about">
-            <h2>My Journey</h2>
             <div class="about">
-                <p class="filler">After being inspired by a friend, i started learning to code at the beginning of 2024. Working my way through sites such as Codecademy and FreeCodeCamp, i knew this is what i wanted to do with my life.</p>
-                <br>
-                <p class="filler">Since then i've enrolled into iO Academy's Software Developer Essentials course.</p>
+                <p class="know-me">Get To Know</p>
+                <p class="more-me">More About Me</p>
             </div>
+            <div class="bio">
+                <div class="bio-box">
+                    <img class="profile-photo">
+                    <div class="experience-box"><i class="fa-solid fa-award"></i>Experience</div>
+                    <div class="education-box"><i class="fa-solid fa-user-group"></i>Education</div>
+                    <div class="bottom-box"></div>
+                </div>
+                
+            </div>  
+            
+            
+        </section>
+
+        <section id="experience">
+            <h1>Experience</h1>
             <div class="tools">
                 <p class="languages">These are some of the languages/frameworks i've worked with:</p>
                     <p class="brands">
@@ -51,7 +80,9 @@
                 </p>
                 <p class="about">Please see some of my projects below.</p>
             </div>
+
         </section>
+
         <section id="projects"><h2>Projects</h2>
             <div class="grid-container">
               
@@ -67,11 +98,7 @@
             <div class="contacts">
                 <h2 class="contact">Contact Links</h2>
                 <p>Get in touch and lets talk!</p>
-                <div class="contact-card">
-                    <a href="mailto:richowen87@icloud.com" target="_blangithubk" class="contact-email"><i class="fa-regular fa-envelope" title="email"></i>  Email me</a>
-                    <a rel="noopener" href="https://github.com/Richtbiscuitcoder" target="_blank" class="contact-github" title="github"><i class="fa-brands fa-github"></i>  Github</a>
-                    <a rel="noopener" href="https://www.linkedin.com/in/rich-owen-886968304/" target="_blank" class="btn contact-linkedin"><i class="fa-brands fa-linkedin"></i>  Linkedin</a>
-                </div>    
+                <a href="mailto:richowen87@icloud.com" target="_blangithubk" class="contact-email"><i class="fa-regular fa-envelope" title="email"></i>  Email me</a>
             </div>
         </section>
         <footer>
