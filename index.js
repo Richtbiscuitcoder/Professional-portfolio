@@ -30,7 +30,7 @@ data.projects.forEach(project => {
     document.querySelector('.grid-container').innerHTML += `
     <div class="project">
         <h3>${project.title}</h3>
-        <img src=${project.image} alt="project image displayed with info about it">
+        <img src=${project.image} alt="project image displayed with info about it" height="400px" width="400">
         <a rel="noopener" href="google.com" target="_blank"><i class="fa-solid fa-globe">-</i> View Live</a>
         <a rel="noopener" href="${project.url}" target="_blank" title="github"><i class="fa-brands fa-github">-</i>  View on Github</a>
         <button class="project-btn open-modal" id="${project.id}" title="button" data-title="${project.title}" data-id="${project.id}" data-description="${project.description}" data-image="${project.image}" data-url="${project.url}">Learn more</button>
