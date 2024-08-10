@@ -19,7 +19,7 @@ body {
   display: flex;
   display: flex;
   font-size: larger;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 .nav-name {
@@ -47,8 +47,8 @@ li:hover {
   text-decoration: underline;
   color: grey;
   text-underline-offset: 1rem;
-  text-decoration-color: gray
-  transition: ;
+  text-decoration-color: hsl(0, 0%, 50%);
+
 }
 
 a {
@@ -56,13 +56,13 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  color: black;
 }
 
-a:hover {
+i:hover {
   cursor: pointer;
-  color: grey;
+  color: hsl(0, 0%, 60%);
 }
+
 
 a:active {
 
@@ -73,11 +73,15 @@ a:visited {
 }
 
 /* intro section  */
+#intro {
+  height: 100vh;
+}
+
 
 #richyboy {
  display: flex;
  justify-content: center;
- padding: 40px;
+ padding: 30px;
 
 }
 
@@ -86,7 +90,8 @@ a:visited {
   margin: 20px;
   height: 300px;
   width: 300px;
-  padding: 10px;
+  border: 30px;
+  padding-top: 20px;
 }
 
 .btn-div {
@@ -135,7 +140,8 @@ a:visited {
 
 .description {
   text-align: center;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  padding: 60px;
 }
 .greeting {
   font-size: 30px;
@@ -154,17 +160,19 @@ a:visited {
 }
 
 /* about section  */
+#about {
+  height: 100vh;
+}
 
 .about {
   text-align: center;
-  padding: 20px;
 }
 
 .know-me {
   color: rgb(61, 60, 60);
   font-weight: normal;
   font-size: 30px;
-  margin: 0;
+  margin-top: 20px;
   border: 0;
 }
 
@@ -175,47 +183,59 @@ a:visited {
 }
 
 .bio {
-  height: 620px;
-  border: 1px solid black;
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
 }
 
 .bio-box {
-  display: flex;
-  border: 1px solid black;
+  display: grid;
   justify-content: space-evenly;
 }
 
 .profile-photo {
-border: 1px solid black;
+
 width: 500px;
 height: 600px;
+padding: 20px;;
   
 }
 .experience-box {
-  border: 1px solid black;
+  border: 2px solid hsl(0, 0%, 50%);
   width: 400px;
-  height: 50%;
+  height: 200px;
   text-align: center;
+  padding: 20px;
+  border-radius: 2rem;
 }
 
 .education-box {
-  border: 1px solid black;
+  border: 2px solid hsl(0, 0%, 50%);
   width: 400px;
-  height: 50%;
+  height: 200px;
   text-align: center;
+  padding: 20px;
+  border-radius: 2rem;
 }
 
 .bottom-box {
-  border: 1px solid black;
+
   width: 850px;
-  height: 50%;
-  
+  height: 300px;
+  grid-column: auto / span 2;
 }
 
-.filler {
-
+#experience {
+  height: 100vh;
 }
 
+.experience {
+  text-align: center;
+  font-size: 60px;
+  font-weight: normal;
+}
 
 .tools {
   
@@ -225,13 +245,6 @@ height: 600px;
   
 }
 
-.name-title{
-
-}
-
-.job-title {
-
-}
 
 
 
