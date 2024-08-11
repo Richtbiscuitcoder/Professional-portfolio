@@ -476,7 +476,7 @@ footer {
 
   }
   #intro {
-    height: 100vh;
+    height: fit-content
   }
   .richyboy {
     display: flex;
