@@ -356,7 +356,7 @@ margin-top: 10px;
 .modal a {
   font-size: 20px;
 }
-
+/*
 .modal a:hover {
   
 }
@@ -368,6 +368,7 @@ margin-top: 10px;
 .modal p {
   
 }
+*/
 
 .close-modal {
   border-radius: 2px solid black;
@@ -459,87 +460,86 @@ footer {
 
 /* media queries */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
+  .nav-bar {
+    display: none;
+  }
+  #intro {
+    height: 100vh;
+  }
+  .richyboy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    
+  }
+  .description {
+    margin-right: 80px;
+    margin-top: 100px;
+  }
+
+  .bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .bio-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+  }
+
+  .bottom-box {
+    width: 80vw;
+    margin-top: 50px;
+  }
+
+  #experience {
+    height: 1200px;
+  }
+
+  #projects {
+    height: 3000px;
+
+  }
+  .more-projects {
+    margin-top: 200px;
+  }
+
   .grid-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-  }
-  .grid-container img {
-    width: 300px;
-  }
-  .project {
-    width: 80%;
-    height: 750px;
-  }
-  #about {
-    height: 1400px;
+    text-align: center;
   }
 
-  p.about {
-    font-size: 30px;
-  }
+ 
 
-  .contact-card {
+  .project-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin-left: 0px;
   }
 
-  .nav-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-  }
-
-  .languages {
-    font-size: 30px;
-  }
-
-  .grid-container img {
-    padding: 20px;
-  }
-  .project a {
-    font-size: 30px;
-  }
-  .project-btn.open-modal {
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
   .brands {
-    font-size: 40px;
-    text-align: center;
-    padding: 0;
-    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 400px;
   }
-  .tools {
-    text-align: center;
+  .frontend {
+    width: 80%;
+    margin-bottom: 50px;
   }
-  .go-to-top {
-    bottom: 5px;
-    right: 10px;
+  .backend {
+    width:80%;
   }
-  li {
-    font-size: larger;
-    padding: 15px;
+  
+  
+  .contact-email {
+    margin-left: 100px;
   }
-  .modal {
-    font-size: 40px;
-  }
-  .close-modal {
-    margin-left: 30px;
-  }
-  h3 {
-    font-size: 50px;
-  }
-  h2 {
-    margin-bottom: 0px;
-    border: 0;
-    padding: 0;
-    font-size: 50px;
-  }
+
 }
