@@ -17,7 +17,6 @@ body {
 
 .nav-bar {
   display: flex;
-  display: flex;
   font-size: larger;
   margin-bottom: 30px;
 }
@@ -80,7 +79,7 @@ a:visited {
 
 
 #intro {
-  height: 100vh;
+  height: fit-content;
 }
 
 
@@ -169,7 +168,7 @@ a:visited {
 
 
 #about {
-  height: 100vh;
+  height: fit-content;
 }
 
 .about {
@@ -254,7 +253,7 @@ a {
 
 
 #experience {
-  height: 100vh;
+  height: fit-content;
 }
 
 .experience {
@@ -302,7 +301,7 @@ a {
 /* project section  */
 
 #projects {
-  height: 100vh;
+  height:fit-content;
 }
 
 .grid-container {
@@ -310,6 +309,8 @@ a {
   align-items: center;
   justify-content: space-around;
   border-radius: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
  
 }
 
@@ -397,7 +398,7 @@ margin-top: 10px;
 /* contact section */
 
 #links {
- height: 600px;
+ height: fit-content;
 }
 
 .contacts {
@@ -405,14 +406,17 @@ margin-top: 10px;
  display: flex;
  justify-content: center;
  flex-direction: column;
+ margin-top: 300px;
+ margin-bottom: 250px;
 }
 
 .contacts p {
-  font-size: 35px;
+  font-size: 25px;
+
 }
 
 .contact-email  {
-  justify-content: center;
+  text-align: ;
   text-decoration: none;
   font-size: 40px;
   color: black;
@@ -440,6 +444,9 @@ margin-top: 10px;
 
 }
 
+#links {
+  height: fit-content;
+}
 /* footer */
 
 footer {
@@ -461,8 +468,12 @@ footer {
 /* media queries */
 
 @media screen and (max-width: 500px) {
-  .nav-bar {
-    display: none;
+  .nav-links {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+
   }
   #intro {
     height: 100vh;
@@ -536,10 +547,14 @@ footer {
   .backend {
     width:80%;
   }
-  
+  .contacts {
+    margin-top: 0px;
+  }
   
   .contact-email {
     margin-left: 100px;
   }
-
+  #links {
+    height: 800px;
+  }
 }
