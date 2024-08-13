@@ -45,28 +45,6 @@ document.querySelectorAll('.grid-container button').forEach(button => {
         modalOne.showModal();
         makeModalContent(button.dataset.url, button.dataset.title, button.dataset.description)
     })
-
-
 })
-
 });
 
-function toggleNav() {
-    const navLinks = document.getElementById('nav-links');
-  
-    if (navLinks.classList.contains('show')) {
-      // If the menu is already shown, hide it with animation
-      navLinks.classList.remove('show');
-      navLinks.classList.add('hide');
-  
-      // Ensure visibility is set to hidden after the animation
-      setTimeout(() => {
-        navLinks.style.visibility = 'hidden';
-      }, 500); // Match this duration with the animation duration
-    } else {
-      // If the menu is hidden, show it with animation
-      navLinks.classList.remove('hide');
-      navLinks.classList.add('show');
-      navLinks.style.visibility = 'visible';
-    }
-  }

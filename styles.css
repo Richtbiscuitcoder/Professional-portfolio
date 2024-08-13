@@ -515,7 +515,7 @@ footer {
 @media screen and (max-width: 500px) {
   
   
-  nav.nav-bar {
+  .nav-bar {
     margin: 0;
     padding: 0;
     display: flex;
@@ -523,40 +523,26 @@ footer {
   }
 
   .nav-links {
-   visibility: hidden;
    justify-content: center;
    flex-direction: column;
    background-color: black;
    height:max-content;
    width: max-content;
-   display: none;
-   opacity: 0;
-   transform: translateY(-100%);
-   transition: opacity 0.5s ease, transform 0.5s ease;
+   visibility: visible;
   }
 
 
-  .nav-links.show {
-    display: flex;
-    animation: navSlideIn 0.5s forwards;
-  }
-  
-  /* Hide state with animation */
-  .nav-links.hide {
-    animation: navSlideOut 0.5s forwards;
-    opacity: 0;
-    transform: translateY(-100%);
-    display: none;
-  }
+ 
 
   a.nav-links {
     color: white;
 
   }
 
-  a.nav-links:visited {
+  .nav-links:visited {
     color: white;
   }
+ 
 
   .hamburger-menu {
     width: 70px;
@@ -785,33 +771,7 @@ footer {
     align-self: center;
   }
 
-  /* Keyframes for opening the nav */
-@keyframes navSlideIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-100%);
-    visibility: hidden; /* Start hidden */
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible; /* End visible */
-  }
-}
 
-/* Keyframes for closing the nav */
-@keyframes navSlideOut {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible; /* Start visible */
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-100%);
-    visibility: hidden; /* End hidden */
-  }
-}
   
 }
 
