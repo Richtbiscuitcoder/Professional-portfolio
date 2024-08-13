@@ -13,22 +13,26 @@
         <script src="https://kit.fontawesome.com/209505bec5.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="container">  
             <header>
                 <nav class="nav-bar" id="nav-bar">
                     <div class="nav-name">
                         <p>RICH OWEN</p>
                     </div>
-                    <ul class="nav-links">
-                        <li><a class="nav-links" href="#about">About</a></li>
-                        <li><a class="nav-links" href="#experience">Experience</a></li>
-                        <li><a class="nav-links" href="#projects">Projects</a></li>
-                        <li><a class="nav-links" href="#links">Links</a></li>
+                    <button class="hamburger-menu" onclick="toggleNav()">
+                        <div class="bar" onclick="toggleNav()"></div>
+                        <div class="bar" onclick="toggleNav()"></div>
+                        <div class="bar" onclick="toggleNav()"></div>
+                    </button>
+                    <ul class="nav-links" id="nav-links">
+                        <li><a class="nav-links" href="#about" onclick="toggleNav()" >About</a></li>
+                        <li><a class="nav-links" href="#experience" onclick="toggleNav()" >Experience</a></li>
+                        <li><a class="nav-links" href="#projects" onclick="toggleNav()" >Projects</a></li>
+                        <li><a class="nav-links" href="#links" onclick="toggleNav()" >Links</a></li>
+                        <li><a class="nav-links close-btn" onclick="toggleNav()" >Close</a></li>
                     </ul>
                 </nav>
             </header>
-        </div>
-        
+            
         <section id="intro" class="intro">
             <div id="richyboy">
                 <div class="description">
@@ -46,9 +50,8 @@
                     </div>
                 </div>
             </div>
-            
-
         </section>
+
         <section id="about">
             <div class="about">
                 <p class="know-me">Get To Know</p>
@@ -73,13 +76,9 @@
                         <p>I like to travel with my fiance.</p>
                         <p>I've been working as a chef since 2006.</p>
                         <p>I love learning.</p>
-
                     </div>
                 </div>
-                
             </div>  
-            
-            
         </section>
 
         <section id="experience">
@@ -102,15 +101,16 @@
                 <p><i class="fa-regular fa-circle-check"></i> GitHub</p>
                 <p><i class="fa-regular fa-circle-check"></i> MySQL</p>
             </div>
-
            </div>
-
         </section>
+
         <p class="more-projects">Browse My</p>
         <section id="projects"><h2 class="projects-title">Projects</h2>
             <div class="grid-container">
-              
-           
+                
+                
+
+
             </div>
             <div class="overlay">
                 <dialog class="modal output" id="modal">
@@ -118,6 +118,7 @@
                 </dialog>
             </div>
         </section>
+
         <section id="links">
             <div class="contacts">
                 <h2 class="contact">Contact Me</h2>
@@ -126,6 +127,7 @@
                 <a href="mailto:richowen87@icloud.com" target="_blank" class="contact-email"> Email me!</a>
             </div>
         </section>
+
         <footer>
             <div class="top-button">
                 <a href="#nav-bar" class="go-to-top" title="top"><i class="fa-solid fa-arrow-up"></i></a>

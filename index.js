@@ -48,6 +48,19 @@ document.querySelectorAll('.grid-container button').forEach(button => {
 
 
 })
+
 });
 
+const openNav = document.querySelector('.hamburger-menu');
+const closeNav = document.querySelector('.close-btn');
+const modal = document.querySelector('.nav-links')
+const links =  document.querySelector("a.nav-links")
 
+function toggleNav() {
+openNav.addEventListener('click', (e) => {
+    modal.style.visibility = "visible";
+    links.style.color = "white";
+    closeNav.style.visibility = "hidden"
+
+})
+}
