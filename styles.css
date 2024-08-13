@@ -134,12 +134,20 @@ a:visited {
   background-color: hsl(0, 0%, 80%);
  }
 
+ .btn-1:active {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 70%);
+ }
+
  .btn-2:hover {
   cursor: pointer;
   background-color: hsl(0, 1%, 28%);
 
  }
- 
+ .btn-2:active {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 70%);
+ }
 
  .contact-card {
   display: flex;
@@ -363,6 +371,12 @@ margin-top: 10px;
     color: black;
 }
 
+.project-btn:active {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 70%);
+  color: black;
+}
+
 .modal {
   text-align: center;
   font-size: 30px;
@@ -372,11 +386,16 @@ margin-top: 10px;
 .modal a {
   font-size: 20px;
 }
-/*
+
 .modal a:hover {
-  
+ color: hsl(0, 0%, 70%);
 }
 
+.modal a:active {
+  color: hsl(0, 0%, 50%);
+ }
+
+/*
 .modal span {
  
 }
@@ -398,6 +417,11 @@ margin-top: 10px;
 
 .close-modal:hover {
   background-color: hsl(0, 0%, 80%);
+  color: hsl(0, 0%, 0%);
+}
+
+.close-modal:active {
+  background-color: hsl(0, 0%, 70%);
   color: hsl(0, 0%, 0%);
 }
 
@@ -446,6 +470,11 @@ margin-top: 10px;
 
 .contact-email:hover {
   background-color: hsl(0, 0%, 80%);
+}
+
+.contact-email:active {
+  background-color: hsl(0, 0%, 70%);
+  color: black;
 }
 
 .contact {
@@ -607,6 +636,15 @@ footer {
     justify-content: center;
     text-align: center;
   
+  }
+  .close-modal {
+    border-radius: 2px solid black;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
+    height: 70px;
+    width: 160px;
+    border-radius: 2rem;
+    font-size: large;
   }
 
   .experience {
