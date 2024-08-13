@@ -509,20 +509,12 @@ footer {
 
 
 
-/* keyframes */
-
-@keyframes modalopen {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 /* media queries */
 
 @media screen and (max-width: 500px) {
+  
+  
   nav.nav-bar {
     margin: 0;
     padding: 0;
@@ -530,14 +522,31 @@ footer {
     justify-content: center;
   }
 
-  a.nav-links {
-   display: flex;
+  .nav-links {
+   visibility: hidden;
    justify-content: center;
    flex-direction: column;
    background-color: black;
-   visibility: hidden;
    height:max-content;
    width: max-content;
+   display: none;
+   opacity: 0;
+   transform: translateY(-100%);
+   transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+
+  .nav-links.show {
+    display: flex;
+    animation: navSlideIn 0.5s forwards;
+  }
+  
+  /* Hide state with animation */
+  .nav-links.hide {
+    animation: navSlideOut 0.5s forwards;
+    opacity: 0;
+    transform: translateY(-100%);
+    display: none;
   }
 
   a.nav-links {
@@ -555,8 +564,8 @@ footer {
     cursor: pointer;
     color: black;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 40px;
+    right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -566,11 +575,12 @@ footer {
 
   .bar {
     border: 2px solid black;
-    height: 2px;
-    width: 40px;
-    margin: 5px;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 5px;
+    background-color: #333;
+    border-radius: 5px;
 
   }
 
@@ -583,6 +593,8 @@ footer {
     padding: 0;
   }
 
+
+  
   #intro {
     height: fit-content;
   }
@@ -590,11 +602,26 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center; 
+    align-items: center;
+    align-self: center;
     
   }
 
+  #about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+
    .about {
-    padding: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
    }
 
   .description {
@@ -603,6 +630,14 @@ footer {
     justify-content: center;
     align-items: center;
     align-self: center;
+    padding: 0;
+  }
+
+  .more-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
   }
   
   .btn-div{
@@ -616,6 +651,7 @@ footer {
     justify-content: center;
     text-align: center;
     align-items: center;
+    width: 90%;
   }
 
   .bio-box {
@@ -625,13 +661,17 @@ footer {
     height: fit-content;
     margin-bottom: 100px;
     align-items: center;
+    align-self: center;
+    width: 80%;
   }
   .education-box {
-    width: 80%;
+    width: fit-content;
+    padding: 10px;
   }
 
   .experience-box {
-    width: 80%;
+    width: fit-content;
+    padding: 10px;
   }
 
   .bottom-box {
@@ -675,7 +715,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    align-self: center;
   
   }
   .close-modal {
@@ -737,5 +778,41 @@ footer {
 
   .go-to-top {
     position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+
+  /* Keyframes for opening the nav */
+@keyframes navSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+    visibility: hidden; /* Start hidden */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible; /* End visible */
   }
 }
+
+/* Keyframes for closing the nav */
+@keyframes navSlideOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible; /* Start visible */
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+    visibility: hidden; /* End hidden */
+  }
+}
+  
+}
+
+

@@ -51,16 +51,22 @@ document.querySelectorAll('.grid-container button').forEach(button => {
 
 });
 
-const openNav = document.querySelector('.hamburger-menu');
-const closeNav = document.querySelector('.close-btn');
-const modal = document.querySelector('.nav-links')
-const links =  document.querySelector("a.nav-links")
-
 function toggleNav() {
-openNav.addEventListener('click', (e) => {
-    modal.style.visibility = "visible";
-    links.style.color = "white";
-    closeNav.style.visibility = "hidden"
-
-})
-}
+    const navLinks = document.getElementById('nav-links');
+  
+    if (navLinks.classList.contains('show')) {
+      // If the menu is already shown, hide it with animation
+      navLinks.classList.remove('show');
+      navLinks.classList.add('hide');
+  
+      // Ensure visibility is set to hidden after the animation
+      setTimeout(() => {
+        navLinks.style.visibility = 'hidden';
+      }, 500); // Match this duration with the animation duration
+    } else {
+      // If the menu is hidden, show it with animation
+      navLinks.classList.remove('hide');
+      navLinks.classList.add('show');
+      navLinks.style.visibility = 'visible';
+    }
+  }
