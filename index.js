@@ -1,4 +1,6 @@
 
+
+
 //modal button functions to open and close 
 const modalOne = document.querySelector('.modal');
 const openModal = document.querySelector('.open-modal');
