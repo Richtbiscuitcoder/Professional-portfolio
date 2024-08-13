@@ -2,9 +2,6 @@
 
 * {
   box-sizing: border-box;
-  border: 0px;
-  margin: 0px;
-  padding: 0px;
 }
 
 html {
@@ -316,6 +313,12 @@ a {
   height:fit-content;
 }
 
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .grid-container {
   display: flex;
   align-items: center;
@@ -343,14 +346,14 @@ margin-top: 10px;
 }
 .project-btn {
 
-  border-radius: 2px solid black;
+  border: 2px solid black;
   background-color: black;
   color: hsl(0, 0%, 100%);
   height: 80px;
   width: 200px;
   border-radius: 2rem;
   font-size: large;
-  margin-left: 95px;
+  align-self: center;
   
 }
 
@@ -531,12 +534,18 @@ footer {
     align-self: center;
     margin-top: 100px;
   }
+  
+  .btn-div{
+    display: flex;
+    flex-direction: column;
+  }
 
   .bio {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
   }
 
   .bio-box {
@@ -545,6 +554,14 @@ footer {
     justify-content: center;
     height: fit-content;
     margin-bottom: 100px;
+    align-items: center;
+  }
+  .education-box {
+    width: 80%;
+  }
+
+  .experience-box {
+    width: 80%;
   }
 
   .bottom-box {
@@ -565,6 +582,20 @@ footer {
     height: 3000px;
 
   }
+
+  .project {
+    align-items: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  img {
+    width: 300px;
+  }
+
+
   .more-projects {
     margin-top: 200px;
   }
@@ -574,6 +605,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+  
   }
 
   .experience {
@@ -586,6 +618,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-self: center;
   }
 
   .brands {
