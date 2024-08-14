@@ -48,3 +48,9 @@ document.querySelectorAll('.grid-container button').forEach(button => {
 })
 });
 
+const closeBtn = document.querySelector('.close-modal');
+function toggleNav() {
+    document.querySelector('.nav').classList.toggle('nav-open');
+    document.querySelector('.nav').classList.toggle('nav-close');
+}
+

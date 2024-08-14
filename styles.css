@@ -81,6 +81,13 @@ a:visited {
   display: none;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
+.close-button {
+  cursor: pointer;
+}
 /* intro section  */
 
 
