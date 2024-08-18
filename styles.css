@@ -535,7 +535,7 @@ footer {
    background-color: black;
    height:max-content;
    width: max-content;
-   visibility: visible;
+   visibility: hidden;
   }
 
 
@@ -644,6 +644,7 @@ footer {
     justify-content: center;
     text-align: center;
     align-items: center;
+    align-self: center;
     width: 90%;
   }
 
