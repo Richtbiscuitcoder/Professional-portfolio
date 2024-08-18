@@ -49,3 +49,19 @@ document.querySelectorAll('.grid-container button').forEach(button => {
 });
 
 
+const navLinks = document.querySelectorAll('.nav-links');
+function toggleNav() {
+    navLinks.forEach(link => {
+        link.style.visibility = 'hidden';
+    })
+}
+
+
+const hamburger = document.querySelector('.hamburger-menu');
+function openNav() {
+    hamburger.addEventListener('click', () => {
+        navLinks.forEach(link => {
+            link.style.visibility = 'visible';
+        })
+    })
+}
