@@ -28,6 +28,11 @@ body {
   padding-left: 100px;
 }
 
+.close-button {
+  display: none;
+  visibility: hidden;
+  
+}
 
 ul {
   display: flex;
@@ -343,15 +348,15 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 100px;
 }
 
 .grid-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   border-radius: 3rem;
   flex-wrap: wrap;
-  margin-bottom: 40px;
  
 }
 
@@ -366,6 +371,7 @@ a {
  font-size: 50px;
  font-weight: 400;
 }
+
 .grid-container .project a {
   margin-top: 10px;
 
@@ -463,12 +469,12 @@ a {
  display: flex;
  justify-content: center;
  flex-direction: column;
- margin-top: 300px;
- margin-bottom: 250px;
+ margin-top: 100px;
+ margin-bottom: 150px;
 }
 
 .contacts p {
-  font-size: 25px;
+  font-size: 35px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -555,7 +561,9 @@ footer {
   }
 
 
- 
+ .close-button {
+  visibility: hidden;
+ }
 
   a.nav-links {
     color: white;
