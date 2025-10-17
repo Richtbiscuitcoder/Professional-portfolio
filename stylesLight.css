@@ -223,7 +223,7 @@ a:visited {
 
 .bio {
   width: 100vw;
-  height: 600px;
+  height: 400px;
   display: flex;
   justify-content: center;
   margin-top: 100px;
@@ -232,6 +232,8 @@ a:visited {
 .bio-box {
   display: grid;
   justify-content: space-evenly;
+  height: fit-content;
+  width: fit-content;
 }
 
 .profile-photo {
@@ -538,6 +540,10 @@ footer {
   display: flex;
   justify-content: center ;
 }
+
+
+
+
 
 
 
@@ -858,5 +864,3 @@ and (max-width: 1150px)
 
   
 }
-
-
